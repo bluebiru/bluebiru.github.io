@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confess</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- START SCREEN -->
+<div id="startScreen">
+    <h1>TEKAN UNTUK MULAI</h1>
+</div>
+
+<div class="container">
+    <h1>Kamu mau lihat tulisan yang kuketik untukmu tidak?</h1>
+    <div class="buttons">
+        <button class="yes-button" onclick="handleYesClick()">Mau</button>
+        <button class="no-button" onclick="handleNoClick()">Gak</button>
+    </div>
+    <div class="gif_container">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+    </div>
+</div>
+
+<!-- AMPLop -->
+<div id="envelopeContainer" class="envelope-container">
+    <p class="envelope-instruction">Tekan amplop</p>
+    <div id="envelope" class="envelope">
+        <div class="flap"></div>
+        <div class="paper" id="paper">
+            <p>
+                ✨ Sejak pertama kali aku melihatmu di Sains Club di antara bau khas ruangan lab IPA, aroma bahan kimia, dan cahaya lampu laboratorium. hatiku seperti menemukan sesuatu yang tak pernah kuharap, namun diam-diam selalu kurindukan. Walau diriku tak dekat denganmu, aku selalu ingin tinggal sedikit lebih lama di ruangan itu, sekadar memastikan bahwa senyummu benar-benar nyata, bukan sekadar pantulan cahaya lampu lab IPA. ✨
+
+🌿 Hari-hari berlalu dengan sunyi yang manis. Aku pura-pura sibuk menata alat, padahal mataku diam-diam menangkap setiap gerakmu, tawa kecilmu, napas lelahmu. Dalam detik-detik itu, aku menyadari sesuatu: perasaanku padamu tumbuh seperti reaksi kimia yang tak bisa ditahan. Walau jarak kita hanya beberapa langkah, rasanya seperti ribuan. Aku dekat secara ruang, namun jauh dalam keberanian untuk mendekatimu. 🌿
+
+✨ Ada malam-malam ketika aku menatap langit dan membayangkan wajahmu di antara bintang-bintang yang berkelip. Aku ingin kau tahu, setiap detik yang kulalui di dekatmu, meski hanya dari jauh, terasa seperti dunia berhenti sejenak untuk menatapmu. Ada kehangatan yang tak bisa kuungkapkan hanya dengan kata-kata, namun tetap mengalir di dalam nadiku, mengisi ruang kosong di hatiku. ✨
+
+🍂 Dan malam ini, di antara sunyi dan cahaya bintang yang tak bisa kupegang, aku mengerti bahwa rasa ini terlalu berharga untuk tetap kusimpan. Maka dengan segenap keberanian yang tersisa, aku memilih untuk jujur. Walau diriku tak dekat denganmu selama ini, aku ingin menjadi seseorang yang setidaknya pernah mencoba melangkah. Aku menyukaimu dengan kelembutan yang tulus, tanpa paksaan, dan dengan harapan yang hangat. Jika kau mengizinkan, aku ingin berada sedikit lebih dekat daripada sekadar bayangan yang diam-diam mengagumimu dari jauh. 🍂
+
+🌸 Aku ingin setiap senyummu menjadi alasan untukku tersenyum. Aku ingin setiap lelahmu menjadi sesuatu yang bisa kubagi. Aku ingin menjadi tempatmu pulang, bukan hanya sekadar yang mengagumimu dari jauh. Karena hatiku, untuk pertama kalinya, tidak ingin hanya menjadi penonton. Hatiku ingin menulis cerita bersamamu pelan, lembut, dan hangat seperti matahari yang bersinar di pagi hari. 🌸
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- MINI MUSIC PLAYER -->
+<div class="music-player" id="musicPlayer">
+    <button class="player-btn" id="playBtn">⏸</button>
+    <span class="music-title">Music</span>
+</div>
+
+<!-- AUDIO -->
+<audio id="audio" loop>
+    <source src="jatuh_suka_tulus.m4a" type="audio/mpeg">
+</audio>
+
+<!-- SUARA KERTAS -->
+<audio id="paperSound">
+    <source src="paper_flip.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
